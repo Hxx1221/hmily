@@ -18,6 +18,9 @@
 package org.dromara.hmily.demo.springcloud.order.entity;
 
 import lombok.Data;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.client.RestTemplate;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -70,5 +73,10 @@ public class Order implements Serializable {
      * 购买人.
      */
     private String userId;
-
+    public static void main(String[] args) {
+        String url = "http://222.66.196.215/newappServer/thirdparty/account/getAppTokenKey.json";
+        RestTemplate restTemplate = new RestTemplate();
+        ResponseEntity<String> responseEntity = restTemplate.exchange(url, HttpMethod.GET, null, String.class);
+        System.out.println(responseEntity.getBody());
+    }
 }

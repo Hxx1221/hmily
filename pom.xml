@@ -18,6 +18,7 @@
         <module>hmily-admin</module>
         <module>hmily-motan</module>
         <module>hmily-spring-boot-starter</module>
+        <module>hmily-demo</module>
     </modules>
 
     <organization>

@@ -7,9 +7,9 @@ server:
 
 spring:
     datasource:
-        driver-class-name:  com.mysql.jdbc.Driver
-        url: jdbc:mysql://192.168.1.98:3306/tcc_account?useUnicode=true&characterEncoding=utf8
-        username: root
+        driver-class-name:  com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://122.51.178.224:3307/tcc_account?useUnicode=true&characterEncoding=utf8
+        username: hxx
         password: 123456
     application:
       name: account-service
@@ -27,9 +27,9 @@ org:
             repositorySupport : db
             started: false
             hmilyDbConfig :
-                 driverClassName  : com.mysql.jdbc.Driver
-                 url :  jdbc:mysql://192.168.1.98:3306/tcc?useUnicode=true&characterEncoding=utf8
-                 username : root
+                 driverClassName  : com.mysql.cj.jdbc.Driver
+                 url :  jdbc:mysql://122.51.178.224:3307/tcc?useUnicode=true&characterEncoding=utf8
+                 username : hxx
                  password : 123456
 
        # repositorySupport : redis
